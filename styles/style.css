@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Kaushan+Script&display=swap");
+
+body{
+			background: #cacaca
+		}
+		.game-box {
+			position:fixed;
+			padding:15px;
+			box-sizing:border-box;
+			width:720px;
+			height:480px;
+			background:#faf8ef;
+			left:50%;
+			top:50%;
+			margin-left:-360px;
+			margin-top:-240px;
+			color:#776e65;
+			z-index:9999999;
+		}
+		.score-container,.best-container {
+			background:#bbada0;
+			border-radius:3px;
+			color:white;
+			float:left;
+			font-size:36px;
+			font-weight:bold;
+			height:50px;
+			line-height:70px;
+			padding:10px 0;
+			position:relative;
+			text-align:center;
+			width:100%;
+			margin-top:15px
+		}
+		.score-container:before,.best-container:before {
+			content:"";
+			width:27px;
+			height:27px;
+			display:inline-block;
+			margin-right:5px;
+			background-repeat:no-repeat
+		}
+		.score-container::after {
+			content:"Wynik:"
+		}
+		.best-container {
+			width:100%;
+			background:#7921d;
+			margin-top:15px
+		}
+		.best-container::after {
+			content:"Najlepszy wynik:"
+		}
+		.scores-container {
+			padding-top:62px;
+			width:227px;
+			float:right
+			
+		}
+		.game-music {
+			position:absolute;
+			width:26px;
+			height:26px;
+			background:url('close.png');
+			z-index:999;
+			right:15px;
+			top:15px;
+			cursor:pointer
+		}
+		.game-music {
+			background:url('../images/music.png');
+		}
+		.game-music.close {
+			background-position:-26px 0
+		}
+		.score-container::after,.best-container::after {
+			color:darkgreen;
+			font-size:14px;
+			left:0;
+			line-height:14px;
+			position:absolute;
+			text-align:center;
+			top:10px;
+			width:100%
+		}
+		.game-button {
+			float:right;
+			background:#372c22;
+			border-radius:3px;
+			width:100%;
+			text-decoration:none;
+			color:#fff;
+			font-size:18px;
+			height:70px;
+			line-height:70px;
+			display:block;
+			text-align:center;
+			cursor:pointer
+		}
+		.game-button:hover {
+			color:#AFFF33
+		}
+		
+		
+.container {
+  min-height: 97vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container h1 {        
+  margin-bottom: 5rem;
+  margin-top:-600px;
+  font-family: "Acme", sans-serif;
+  font-size: 12rem;
+  font-weight: bolder;
+  color: darkgreen;
+}
+
+.button1 {
+  border-radius: 25px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  
+}
+.button1:hover {
+  border-radius: 25px;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+}

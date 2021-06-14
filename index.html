@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Snake JS</title>
+	<link rel="stylesheet" href="styles/style.css">
+	
+	<script src="./game.js"></script>
+</head>
+<body>
+	<audio class="snake-audio" loop="loop">
+		<source src="music/bacground.mp3" type="audio/mpeg">
+	</audio>
+	<audio class="eat-audio">
+		<source src="music/hit.mp3" type="audio/mpeg">
+	</audio>
+	<audio class="over-audio">
+		<source src="music/gameover.mp3" type="audio/mpeg">
+	</audio>
+	<div class="container">
+	
+	<h1>Snake</h1>
+	</div>  
+	<div class="game-box">
+		<canvas id="gameCanvas" width="450" height="450"></canvas>
+		<div class="scores-container"> 
+			<a class="game-button">START</a> 
+			<div class="score-container">0</div> 
+			<div class="best-container">0000</div>
+			<div class="game-music"></div>
+		</div>
+	</div>
+	
+</body>
+</html>
